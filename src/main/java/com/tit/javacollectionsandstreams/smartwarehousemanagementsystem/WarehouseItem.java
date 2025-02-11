@@ -1,27 +1,23 @@
 package com.tit.javacollectionsandstreams.smartwarehousemanagementsystem;
 
+// Creating an abstract class WarehouseItem to represent the items in the warehouse
 abstract class WarehouseItem {
-
     private String name;
-    private int quantity;
+    private double price;
 
-    WarehouseItem(String name, int quantity){
-        this.name=name;
-        this.quantity=quantity;
+    public WarehouseItem(String name, double price) {
+        this.name = name;
+        this.price = price;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public int getQuantity(){
-        return quantity;
+    public double getPrice() {
+        return price;
     }
 
-    @Override
-    public String toString(){
-        return "Name: "+ name+", Quantity : "+quantity;
-
-    }
-
+    // Abstract method to be implemented by subclasses
+    public abstract void displayItemDetails();
 }

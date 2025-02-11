@@ -1,21 +1,16 @@
 package com.tit.javacollectionsandstreams.smartwarehousemanagementsystem;
 
+// Creating a class Electronics that extends WarehouseItem
 class Electronics extends WarehouseItem {
+    private String brand;
 
-    private String warranty;
-
-    Electronics(String name, int quantity,String warranty){
-        super(name, quantity);
-        this.warranty=warranty;
-    }
-
-    public String getWarranty(){
-        return warranty;
+    public Electronics(String name, double price, String brand) {
+        super(name, price);
+        this.brand = brand;
     }
 
     @Override
-    public String toString(){
-        return super.toString() + ", Warranty : "+warranty;
+    public void displayItemDetails() {
+        System.out.println("Electronics - Name: " + getName() + ", Price: " + getPrice() + ", Brand: " + brand);
     }
-
 }

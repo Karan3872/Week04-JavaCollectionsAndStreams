@@ -1,26 +1,35 @@
 package com.tit.javacollectionsandstreams.smartwarehousemanagementsystem;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
- class Storage <T extends WarehouseItem>{
-
+// Creating a generic class Storage<T extends WarehouseItem> to manage the storage of items
+class Storage<T extends WarehouseItem> {
     private List<T> items;
 
-    Storage(){
+    public Storage() {
         items = new ArrayList<>();
     }
 
-    public void AddItem(T item){
+    // Method to add an item to the storage
+    public void addItem(T item) {
         items.add(item);
     }
 
-    public T getItem(int index){
-        return items.get(index);
+    // Method to remove an item from the storage
+    public void removeItem(T item) {
+        items.remove(item);
     }
 
-    public List<T> getAllItems(){
+    // Method to get the list of items in the storage
+    public List<T> getItems() {
         return items;
     }
 
+    // Method to display all items in the storage
+    public void displayAllItems() {
+        for (T item : items) {
+            item.displayItemDetails();
+        }
+    }
 }

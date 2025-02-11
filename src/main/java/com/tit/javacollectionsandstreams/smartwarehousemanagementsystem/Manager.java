@@ -1,14 +1,12 @@
 package com.tit.javacollectionsandstreams.smartwarehousemanagementsystem;
 
-import java.util.ArrayList;
 import java.util.List;
 
+// Creating a class Warehouse to display all items in storage regardless of their type
 class Manager {
-
-    public static void displayItems(List<? extends WarehouseItem> items){
-        for(WarehouseItem item : items){
-            System.out.println(item);
+    public static void displayAllItemsInStorage(List<? extends WarehouseItem> items) {
+        for (WarehouseItem item : items) {
+            item.displayItemDetails();
         }
     }
-
 }

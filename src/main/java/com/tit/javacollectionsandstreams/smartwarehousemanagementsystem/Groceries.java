@@ -1,21 +1,17 @@
 package com.tit.javacollectionsandstreams.smartwarehousemanagementsystem;
-
-class Groceries extends WarehouseItem{
-
+// Creating a class Groceries that extends WarehouseItem
+class Groceries extends WarehouseItem {
     private String expiryDate;
+    private String manufactureDate;
 
-    Groceries(String name,int quantity,String expiryDate){
-        super(name, quantity);
-        this.expiryDate=expiryDate;
-    }
-
-    public String getExpiryDate(){
-        return expiryDate;
+    public Groceries(String name, double price, String expiryDate, String manufactureDate) {
+        super(name, price);
+        this.expiryDate = expiryDate;
+        this.manufactureDate = manufactureDate;
     }
 
     @Override
-    public String toString(){
-        return super.toString()+ ", ExpiryDate : "+expiryDate;
+    public void displayItemDetails() {
+        System.out.println("Groceries - Name: " + getName() + ", Price: " + getPrice() + ", Expiry Date: " + expiryDate + ", Manufacture Date: " + manufactureDate);
     }
-
 }
