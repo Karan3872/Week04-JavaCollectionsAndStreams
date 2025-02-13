@@ -1,33 +1,21 @@
 package com.tit.javacollections.listinterface.frequencyofelements;
 
-import org.junit.jupiter.api.Test;
 import java.util.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
-// Creating a class TestingFrequencyFinder to test counting frequency of elements
-class TestingFrequencyFinder
+// Creating a class FrequencyFinder to demonstrate counting frequency of elements
+public class FrequencyFinder
 {
-
-    // Test method for counting frequency of elements in FrequencyCounterTest
-    @Test
-    void testFrequencyCounter() {
+    public static void main(String[] args) {
         // Creating an object of FrequencyCounter
         FrequencyCounter counter = new FrequencyCounter();
 
         // List of strings
         List<String> list = Arrays.asList("apple", "banana", "apple", "orange");
 
-        // Expected frequency map
-        Map<String, Integer> expected = new HashMap<>();
-        expected.put("apple", 2);
-        expected.put("banana", 1);
-        expected.put("orange", 1);
-
         // Counting frequency of elements
         Map<String, Integer> frequencyMap = counter.countFrequency(list);
 
-        // Asserting the frequency map
-        assertEquals(expected, frequencyMap);
-        System.out.println("Frequency Counter Test Passed");
+        // Printing the frequency map
+        System.out.println("Frequency of elements: " + frequencyMap);
     }
 }
