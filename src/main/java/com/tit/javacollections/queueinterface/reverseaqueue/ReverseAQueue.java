@@ -1,4 +1,4 @@
-package com.tit.javacollections.queueinterface;
+package com.tit.javacollections.queueinterface.reverseaqueue;
 
 import java.util.*;
 

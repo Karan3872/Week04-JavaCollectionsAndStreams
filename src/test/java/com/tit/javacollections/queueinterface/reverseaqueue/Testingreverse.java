@@ -1,10 +1,8 @@
 package com.tit.javacollections.queueinterface.reverseaqueue;
 
-import com.tit.javacollections.queueinterface.Reverse;
 import org.junit.Test;
 
 import java.util.*;
-import java.util.concurrent.ConcurrentLinkedQueue;
 
 import static org.junit.Assert.assertEquals;
 
