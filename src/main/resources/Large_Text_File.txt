@@ -1,5 +1,4 @@
-Error in line 1.
-Another error occurred.
 This is a test line.
-Error found in the system.
-System has no errors.
+This line contains an Error.
+Another test line with no issues.
+Here is another error line.
