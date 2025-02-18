@@ -1,0 +1,5 @@
+error in line 1.
+another error occurred.
+this is a test line.
+error found in the system.
+system has no errors.
